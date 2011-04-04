@@ -1,0 +1,12 @@
+<TemplatesExport family="Live Templates">
+  <Template uid="57e98af8-8cad-4b11-aa6e-1d3ee115777f" shortcut="JasonCheckRequireTest" description="Create a check require test with most info filled out" text="/// &lt;summary&gt;&#xD;&#xA;/// Tests the $MethodName$ throws exception if $ValueToCheckFor$ not found.&#xD;&#xA;/// &lt;/summary&gt;&#xD;&#xA;[TestMethod]&#xD;&#xA;[ExpectedException(typeof(UCDArch.Core.Utils.PreconditionException))]&#xD;&#xA;public void Test$MethodName$ThrowsExceptionIf$ValueToCheckFor$NotFound()&#xD;&#xA;{&#xD;&#xA;    #region Arrange&#xD;&#xA;    $END$&#xD;&#xA;    #endregion Arrange&#xD;&#xA;&#xD;&#xA;    try&#xD;&#xA;    {&#xD;&#xA;        #region Act&#xD;&#xA;        Controller.$Method$;&#xD;&#xA;        #endregion Act&#xD;&#xA;    }&#xD;&#xA;    catch (Exception message)&#xD;&#xA;    {&#xD;&#xA;        #region Assert&#xD;&#xA;        Assert.AreEqual(&quot;$ErrorMessage$&quot;, message.Message);&#xD;&#xA;        #endregion Assert&#xD;&#xA;        throw;&#xD;&#xA;    }            &#xD;&#xA;}" reformat="False" shortenQualifiedReferences="True">
+    <Categories />
+    <Variables>
+      <Variable name="ValueToCheckFor" expression="" initialRange="0" />
+      <Variable name="Method" expression="AspMvcAction()" initialRange="2" />
+      <Variable name="ErrorMessage" expression="" initialRange="0" />
+      <Variable name="MethodName" expression="guessElementType(Method)" initialRange="0" />
+    </Variables>
+    <CustomProperties />
+  </Template>
+</TemplatesExport>

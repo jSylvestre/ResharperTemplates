@@ -1,0 +1,9 @@
+<TemplatesExport family="Live Templates">
+  <Template uid="4fe11da8-83d2-4fb6-9fea-75dc43124724" shortcut="JasonTest" description="Create test method" text="&#xD;&#xA;[TestMethod]&#xD;&#xA;public void Test$Description$()&#xD;&#xA;{&#xD;&#xA;	#region Arrange&#xD;&#xA;	$END$&#xD;&#xA;	#endregion Arrange&#xD;&#xA;	&#xD;&#xA;	#region Act&#xD;&#xA;	#endregion Act&#xD;&#xA;	&#xD;&#xA;	#region Assert&#xD;&#xA;	#endregion Assert		&#xD;&#xA;}" reformat="True" shortenQualifiedReferences="True">
+    <Categories />
+    <Variables>
+      <Variable name="Description" expression="" initialRange="0" />
+    </Variables>
+    <CustomProperties />
+  </Template>
+</TemplatesExport>

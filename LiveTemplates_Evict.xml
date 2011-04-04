@@ -1,0 +1,9 @@
+<TemplatesExport family="Live Templates">
+  <Template uid="e8b91bdc-c80b-4e60-b170-2e6322f926c5" shortcut="Evict" description="Evict NHibernate Entity" text="NHibernateSessionManager.Instance.GetSession().Evict($entity$);" reformat="True" shortenQualifiedReferences="True">
+    <Categories />
+    <Variables>
+      <Variable name="entity" expression="" initialRange="0" />
+    </Variables>
+    <CustomProperties />
+  </Template>
+</TemplatesExport>

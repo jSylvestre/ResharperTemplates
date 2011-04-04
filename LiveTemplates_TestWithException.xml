@@ -1,0 +1,12 @@
+<TemplatesExport family="Live Templates">
+  <Template uid="4cb2cc7f-ee84-4480-a86f-f8abededcd4b" shortcut="JasonTestWithException" description="Generat test that will generate an exception with a validation message." text="        /// &lt;summary&gt;&#xD;&#xA;        /// Tests the $FieldToTest$ with A value of $TestValue$ does not save.&#xD;&#xA;        /// &lt;/summary&gt;&#xD;&#xA;        [TestMethod]&#xD;&#xA;        [ExpectedException(typeof(ApplicationException))]&#xD;&#xA;        public void Test$FieldToTest$WithAValueOf$TestValue$DoesNotSave()&#xD;&#xA;        {&#xD;&#xA;            $Entity$ $entityVariable$ = null;&#xD;&#xA;            try&#xD;&#xA;            {&#xD;&#xA;                #region Arrange&#xD;&#xA;                $entityVariable$ = GetValid(9);&#xD;&#xA;                $entityVariable$.$FieldToTest$ = $TestValue$;&#xD;&#xA;                #endregion Arrange&#xD;&#xA;&#xD;&#xA;                #region Act&#xD;&#xA;                $Entity$Repository.DbContext.BeginTransaction();&#xD;&#xA;                $Entity$Repository.EnsurePersistent($entityVariable$);&#xD;&#xA;                $Entity$Repository.DbContext.CommitTransaction();&#xD;&#xA;                #endregion Act&#xD;&#xA;            }&#xD;&#xA;            catch (Exception)&#xD;&#xA;            {&#xD;&#xA;                Assert.IsNotNull($entityVariable$);&#xD;&#xA;                Assert.AreEqual($entityVariable$.$FieldToTest$, $TestValue$);&#xD;&#xA;                var results = $entityVariable$.ValidationResults().AsMessageList();&#xD;&#xA;                results.AssertErrorsAre(&quot;&quot;);&#xD;&#xA;                Assert.IsTrue($entityVariable$.IsTransient());&#xD;&#xA;                Assert.IsFalse($entityVariable$.IsValid());&#xD;&#xA;                throw;&#xD;&#xA;            }	&#xD;&#xA;        }" reformat="False" shortenQualifiedReferences="True">
+    <Categories />
+    <Variables>
+      <Variable name="Entity" expression="" initialRange="0" />
+      <Variable name="entityVariable" expression="decapitalize(Entity)" initialRange="-1" />
+      <Variable name="FieldToTest" expression="" initialRange="2" />
+      <Variable name="TestValue" expression="" initialRange="2" />
+    </Variables>
+    <CustomProperties />
+  </Template>
+</TemplatesExport>

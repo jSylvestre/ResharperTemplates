@@ -1,0 +1,9 @@
+<TemplatesExport family="Live Templates">
+  <Template uid="61616fc3-7c04-46ae-9fd0-9051c5267b53" shortcut="JasonGetArguments" description="GetArgumentsForCallsMadeOn" text="            $Entity$Repository.AssertWasCalled(a =&gt; a.EnsurePersistent(Arg&lt;$Entity$&gt;.Is.Anything));&#xD;&#xA;            var args = ($Entity$)$Entity$Repository.GetArgumentsForCallsMadeOn(a =&gt; a.EnsurePersistent(Arg&lt;$Entity$&gt;.Is.Anything))[0][0]; &#xD;&#xA;" reformat="True" shortenQualifiedReferences="True">
+    <Categories />
+    <Variables>
+      <Variable name="Entity" expression="" initialRange="1" />
+    </Variables>
+    <CustomProperties />
+  </Template>
+</TemplatesExport>
