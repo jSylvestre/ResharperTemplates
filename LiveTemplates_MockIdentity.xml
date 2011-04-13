@@ -1,0 +1,7 @@
+<TemplatesExport family="Live Templates">
+  <Template uid="121ea2d5-1b38-48b7-b688-68ada899184b" shortcut="JasonMockIdentity" description="Call to MockHttpContext" text="Controller.ControllerContext.HttpContext = new MockHttpContext(0, new[] { &quot;&quot; }, &quot;Me&quot;);" reformat="True" shortenQualifiedReferences="True">
+    <Categories />
+    <Variables />
+    <CustomProperties />
+  </Template>
+</TemplatesExport>
