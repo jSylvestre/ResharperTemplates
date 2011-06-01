@@ -1,0 +1,1 @@
+This is useful to compare changes to the text.
